@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nexus Calc — Scientific</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <main class="calc-wrap">
+    <header class="title">
+      <h1>NEXUS CALC</h1>
+      <div class="mode-toggle">
+        <label><input id="degToggle" type="checkbox" checked /> Degrees</label>
+      </div>
+    </header>
+
+    <section class="display-area">
+      <div id="expr" class="expr"></div>
+      <input id="result" class="result" readonly />
+    </section>
+
+    <section class="buttons">
+      <!-- Row 1 -->
+      <button data-action="clear" class="btn ac">AC</button>
+      <button data-value="sin(" class="btn">sin</button>
+      <button data-value="cos(" class="btn">cos</button>
+      <button data-value="tan(" class="btn">tan</button>
+      <button data-action="back" class="btn">⌫</button>
+
+      <!-- Row 2 -->
+      <button data-value="log(" class="btn">log</button>
+      <button data-value="ln(" class="btn">ln</button>
+      <button data-value="sqrt(" class="btn">√</button>
+      <button data-value="^" class="btn">x^y</button>
+      <button data-value="/" class="btn op">÷</button>
+
+      <!-- Row 3 -->
+      <button data-value="Math.PI" class="btn">π</button>
+      <button data-value="Math.E" class="btn">e</button>
+      <button data-value="(" class="btn">(</button>
+      <button data-value=")" class="btn">)</button>
+      <button data-value="*" class="btn op">×</button>
+
+      <!-- Row 4 -->
+      <button data-value="7" class="btn">7</button>
+      <button data-value="8" class="btn">8</button>
+      <button data-value="9" class="btn">9</button>
+      <button data-value="!" class="btn">x!</button>
+      <button data-value="-" class="btn op">−</button>
+
+      <!-- Row 5 -->
+      <button data-value="4" class="btn">4</button>
+      <button data-value="5" class="btn">5</button>
+      <button data-value="6" class="btn">6</button>
+      <button data-value="." class="btn">.</button>
+      <button data-value="+" class="btn op">+</button>
+
+      <!-- Row 6 -->
+      <button data-value="1" class="btn">1</button>
+      <button data-value="2" class="btn">2</button>
+      <button data-value="3" class="btn">3</button>
+      <button data-value="0" class="btn zero">0</button>
+      <button data-action="equals" class="btn equals">=</button>
+    </section>
+
+    <footer class="credits">Made with ☕ — Copy & customize freely</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
